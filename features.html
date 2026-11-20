@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#090a0c">
+  <meta name="description" content="Explore Sacrament Edition’s classic controls and camera, reworked combat, bosses, worlds, story, restored content, and upcoming additions.">
+  <title>New features — Silent Hill 4 Sacrament Edition</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="preload" href="assets/sh4-menu.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="inner-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="mast">
+    <div class="banner"><div class="banner-photo" aria-hidden="true"><img src="assets/door-source.webp" alt="" width="1920" height="1080" fetchpriority="high"></div>
+      <a class="identity" href="index.html" aria-label="Silent Hill 4 Sacrament Edition home"><img class="title-logo" src="assets/title.webp" alt="Silent Hill 4 Sacrament Edition" width="1300" height="269"></a>
+    </div>
+    <nav class="top-nav" aria-label="Main navigation"><div class="wrap menu">
+        <a href="index.html">Home</a>
+        <a href="features.html" aria-current="page">New features</a>
+        <a href="about.html">About<span class="optional">&nbsp;the project</span></a>
+        <a href="download.html">Download</a>
+        <a class="discord-shortcut" href="https://discord.gg/ubzuQQMsM7" aria-label="Project Discord" title="Project Discord" target="_blank" rel="noopener"><img src="assets/discord.svg" alt="" width="22" height="22"></a>
+    </div></nav>
+  </header>
+<main class="content wrap" id="main" tabindex="-1">
+  <header class="page-heading">
+    <h1>New features</h1>
+    <p>Some of the work Team Silent left behind is still in the game files. You can find traces of it deep in the code, along with unused animations, sounds, and music in the archives. Sacrament Edition puts that material back into the game and gives Henry new mechanics, encounters, and ways to play throughout his journey in Silent Hill 4: The Room.</p>
+  </header>
+  <div class="archive-layout">
+    <aside>
+      <nav class="chapter-nav" aria-label="Feature sections">
+        <p class="menu-heading">On this page</p>
+        <a href="#classic">Classic Silent Hill, Restored</a>
+        <a href="#combat">Combat</a>
+        <a href="#enemies">Enemies</a>
+        <a href="#bosses">Bosses</a>
+        <a href="#worlds">Worlds and Environments</a>
+        <a href="#story">Story</a>
+        <a href="#henry">Henry</a>
+        <a href="#menus-and-hud">Menus and HUD</a>
+        <a href="#restored-content">Restored and Unused Content</a>
+        <a href="#quality-of-life">Quality of Life</a>
+        <a href="#upcoming">Upcoming</a>
+      </nav>
+    </aside>
+    <div class="chapters">
+      <section class="feature-chapter" id="classic" aria-labelledby="classic-heading">
+        <h2 id="classic-heading">Classic Silent Hill, Restored</h2>
+        <div class="feature-lead">
+          <div class="feature-item" id="flashlight">
+            <h3>Flashlight addition</h3>
+            <p>I always imagined Silent Hill 4 would be one of the scariest games to play with a flashlight. I was sad to see it never got one. That was the starting point for my project. I wanted to add the flashlight and lighting the way I think Team Silent envisioned it.</p>
+          </div>
+          <figure class="shot">
+            <img src="assets/classic-view.webp" alt="Henry’s flashlight lights the floor of a dark corridor as the camera follows behind him." width="1000" height="669" decoding="async">
+            <figcaption>Henry’s flashlight · In-game capture</figcaption>
+          </figure>
+          <div class="feature-item">
+            <h3>Silent Hill 3’s cameras</h3>
+            <p>Sacrament Edition uses the camera mechanics from Silent Hill 3. I studied, tested and recreated them to fit Silent Hill 4’s camera system, or lack thereof. I placed the new camera in every room in the game and matched it to fit each environment.</p>
+          </div>
+        </div>
+        <div class="feature-entries">
+          <div class="feature-item">
+            <h3>Classic tank controls</h3>
+            <p>Henry’s movement in the original felt unfinished and rushed. Using Heather’s movement and tank controls brings back that original Silent Hill vibe. I tuned the controls to fit Henry’s own animations.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Radio</h3>
+            <figure class="feature-quote">
+              <blockquote><p>“Radio… What’s going on with that radio?”</p></blockquote>
+              <figcaption>— Harry goddamn Mason</figcaption>
+            </figure>
+            <p>Silent Hill 4 never had a portable radio for some reason. I’m not sure if that was intentional or if they didn’t have time to put it in the game, but I still believe Team Silent wanted to include the radio in Silent Hill 4: The Room.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Classic inventory</h3>
+            <p>A lot of people were frustrated with having to go back to the apartment just to grab a key or a drink like the chocolate milk. The classic Silent Hill inventory is on by default to bring back the old feel. With this setting on, Henry can carry everything in his back pocket, just like the other protagonists.</p>
+          </div>
+          <div class="feature-item">
+            <h3>First-person mode</h3>
+            <p>If you like the point-and-shoot feel of over-the-shoulder games with a mouse and keyboard, you can turn on first-person mode. Seeing those same rooms through Henry’s eyes totally changes the vibe of the game, which I absolutely love.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-chapter" id="combat" aria-labelledby="combat-heading">
+        <h2 id="combat-heading">Combat</h2>
+        <div class="feature-entries">
+          <div class="feature-item">
+            <h3>Blocking and dodging</h3>
+            <p>It seemed like Silent Hill 4 was leaning more into melee combat. Some of those mechanics never felt fully fleshed out, and I don’t think we got to experience them the way Team Silent wanted us to. I think the mechanics behind the melee weapons are pretty cool and fun to play with, but the clunkiness and time constraints got in the way.</p>
+            <p>Now Henry can block, dodge, lock on to enemies, and swing his weapons while moving.</p>
+          </div>
+          <div class="feature-item" id="weapon-upgrades">
+            <h3>Weapon upgrades</h3>
+            <p>Look for Crimson Stones as you explore. Combine one with the Steel Pipe or any other melee weapon in your inventory. Normal weapons no longer have a charge attack. You need to upgrade them to get it back. Once you do, Henry gets a special animation and new sounds while he charges that weapon. Eventually, each upgraded weapon will have its own effect.</p>
+            <details>
+              <summary>Spoiler: Rusty Axe upgrade ability</summary>
+              <p>The Rusty Axe unlocks a fully charged swing that can one-shot any normal enemy in the game. It’s a long wind-up, though, and a hit will interrupt Henry before he can finish the swing. Time it just right and you get that satisfying insta-kill.</p>
+            </details>
+            <figure class="feature-quote">
+              <p>Charged attacks go back to the original game. Team Silent wanted Henry to rely on pipes and clubs for most fights.</p>
+              <figcaption>Imamura and Yamaoka on melee weapons · <a href="https://www.silenthillmemories.net/sh4/post_mortem_en.htm#:~:text=TOO%20MUCH%20DEPENDENCE%20ON%20MELEE%20WEAPONS" target="_blank" rel="noopener">2005 postmortem</a></figcaption>
+            </figure>
+          </div>
+          <div class="feature-item" id="shotgun">
+            <h3>Added shotgun</h3>
+            <p>You can find the shotgun throughout the game, with shotgun shells scattered around the map. The gun models in that apartment room were the exact same ones from Silent Hill 3. They just never got used as weapons. Maybe you should revisit that room and take a closer look.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Finishing blows</h3>
+            <p>I wanted you to feel the impact when Henry lands the final hit on the last enemy in a fight, especially after you’ve upgraded your weapon. That ties in with <a href="https://www.silenthillmemories.net/sh4/post_mortem_en.htm#:~:text=TOO%20MUCH%20DEPENDENCE%20ON%20MELEE%20WEAPONS" target="_blank" rel="noopener">Team Silent’s focus on melee combat</a>. When Henry lands the final blow, you get some neat impact frames. They give it a nice punch, make the end of each fight feel satisfying, and give Henry a little bit of that anime vibe, which, he totally has…</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-chapter" id="enemies" aria-labelledby="enemies-heading">
+        <h2 id="enemies-heading">Enemies</h2>
+        <div class="feature-entries">
+          <div class="feature-item" id="sniffer-dogs">
+            <h3>Sniffer Dogs</h3>
+            <p>I completely overhauled the Sniffer Dogs’ AI. I found moves in the code that they never used and restored them. They no longer wait forever for you to drop your combat stance. Those moves give them more variety when they come at you.</p>
+            <p>The horrible stock cougar sound effect is gone. Thank God.</p>
+          </div>
+          <div class="feature-item" id="twin-victims">
+            <h3>Twin Victims</h3>
+            <p>The Twin Victims now stalk you from farther away. They point at you, then charge with a baby squeal that went unused in the original game. I think it fits them perfectly. I’ve updated some of their other sounds and mechanics, too. I hope that makes fighting them more engaging.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-chapter" id="bosses" aria-labelledby="bosses-heading">
+        <h2 id="bosses-heading">Bosses</h2>
+        <section class="boss-group" id="mini-bosses" aria-labelledby="mini-bosses-heading">
+          <h3 id="mini-bosses-heading">Mini-bosses</h3>
+          <div class="feature-entries">
+            <div class="feature-item" id="jasper">
+              <h4>Jasper Gein (ghost form)</h4>
+              <p>Jasper finally met the Red Devil at Wish House, where he burned to death. I believe Team Silent had a vision for a ghost mini-boss at the end of every level, with each of these ghosts getting a fight of their own.</p>
+              <p>Now Jasper has a fight of his own in the courtyard outside Wish House. He has new phases, abilities, and sound effects. I want each of Walter’s victims to fight in a way that feels like them, and Jasper is where I started.</p>
+              <figure class="feature-quote">
+                <blockquote cite="https://www.silenthillmemories.net/sh4/post_mortem_en.htm"><p>“…we weren’t able to budget the time for our programming staff to make even one mid-level boss.”</p></blockquote>
+                <figcaption>Akihiro Imamura and Akira Yamaoka · <a href="https://www.silenthillmemories.net/sh4/post_mortem_en.htm#:~:text=ABSENCE%20OF%20MID-LEVEL%20BOSSES" target="_blank" rel="noopener">2005 postmortem</a></figcaption>
+              </figure>
+            </div>
+            <div class="upcoming-fights" id="upcoming-mini-bosses">
+              <p>I’m working on the mechanics for these next three mini-boss fights.</p>
+              <section class="planned-fight" id="cynthia-velasquez">
+                <h4>Cynthia Velasquez</h4><p>Coming soon</p>
+              </section>
+              <section class="planned-fight" id="andrew-desalvo">
+                <h4>Andrew DeSalvo</h4><p>Coming soon</p>
+              </section>
+              <section class="planned-fight" id="richard-braintree">
+                <h4>Richard Braintree</h4><p>Coming soon</p>
+              </section>
+              <div class="discord-callout">
+                <p>Have any cool ideas for these boss fights? I’d love to hear them on Discord.</p>
+                <a href="https://discord.gg/ubzuQQMsM7" target="_blank" rel="noopener"><img src="assets/discord.svg" alt="" width="22" height="22">Project Discord<span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="boss-group" id="main-bosses" aria-labelledby="main-bosses-heading">
+          <h3 id="main-bosses-heading">Main bosses</h3>
+          <div class="feature-entries">
+            <div class="feature-item" id="one-truth">
+              <h4>The revamped One Truth boss fight</h4>
+              <p>The One Truth can be one of the most frustrating fights in the game, especially after that long stretch just to get there. I’ve added new levels and mechanics to build up to the moment you finally meet the One Truth.</p>
+              <p>There’s a new item you can equip, a special Holy Candle. Use it to help you find the One Truth during the boss fight. I hope experimenting with the candle draws you deeper into the story and makes an old fight feel fresh.</p>
+              <figure class="feature-quote">
+                <blockquote cite="https://www.silenthillmemories.net/sh4/post_mortem_en.htm"><p>“a sense of achievement and exhilaration”</p></blockquote>
+                <figcaption>Imamura and Yamaoka on what beating a mid-level boss gives players · <a href="https://www.silenthillmemories.net/sh4/post_mortem_en.htm#:~:text=ABSENCE%20OF%20MID-LEVEL%20BOSSES" target="_blank" rel="noopener">2005 postmortem</a></figcaption>
+              </figure>
+              <figure class="shot">
+                <img src="assets/truth.webp" alt="Dark curtains line the path toward a lone doorway." width="800" height="500" loading="lazy" decoding="async">
+                <figcaption>The One Truth halls · Development render</figcaption>
+              </figure>
+            </div>
+            <div class="feature-item" id="final-boss">
+              <h4>The final fight with Walter Sullivan</h4>
+              <p>There’s so much more going on behind the scenes during Walter’s final fight than the game tells you. The Crimson Tome tells Henry how to stop Walter from completing the 21 Sacraments, but in the middle of that fight it’s hard to tell what’s happening or why. With the new mechanics, I wanted you to feel the part each spirit plays as you follow the Tome and try to stop the ritual.</p>
+              <p>I’ve ironed out Walter’s moves and given him some new ones, too. He can break into a headlong charge or open fire across the arena. I wanted enough variety that taking him down would take more than keeping him in a stunlock. I really hope you enjoy the atmosphere and the attention to detail that went into bringing the story behind this fight to life.</p>
+              <p class="feature-source"><a href="https://www.silenthillmemories.net/sh4/memos_en.htm#crimson_tome" target="_blank" rel="noopener">Read the Crimson Tome from the game.</a></p>
+              <figure class="shot">
+                <img src="assets/boss.webp" alt="Henry faces a figure in a firelit recess of the arena." width="1430" height="607" loading="lazy" decoding="async">
+                <figcaption>The final arena · In-game capture</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="feature-chapter" id="worlds" aria-labelledby="worlds-heading">
+        <h2 id="worlds-heading">Worlds and Environments</h2>
+        <p class="chapter-intro">Silent Hill 4 had a lot of tools and environmental effects that went unused. The Water Prison barely used fog, the water effects were barely there, and the Forest paths never got rain. I wanted to bring those effects to life with Team Silent’s vision in mind. I still think this could have been the best-looking Silent Hill game, maybe even the scariest, if the team had more time to decorate and flesh out these environments.</p>
+        <div class="feature-item" id="subway-second-visit">
+          <h3>Subway on the second visit</h3>
+          <p>In the original game, Henry went back through the same Subway with barely any changes. Now he returns to a hellish version of the Subway, with a different atmosphere and that classic Silent Hill look.</p>
+        </div>
+        <div class="feature-lead">
+          <div class="feature-item" id="forest-world">
+            <h3>The Forest World</h3>
+            <p>I rebuilt the Forest with longer walking paths. Henry can walk straight from one stretch of woods into the next without a door or gate breaking up the trail. On the first visit, rain falls through the trees and a thick fog covers the woods. I want it to feel like one long walk through a dense, dark forest.</p>
+            <p>On the second visit, things change. Jasper has burned down Wish House and set the forest around it on fire. I hope you enjoy exploring this new environment I created to give the second visit more atmosphere.</p>
+          </div>
+          <figure class="shot">
+            <img src="assets/worlds.webp" alt="A trail winds between tall, burning trunks in the Forest." width="800" height="450" loading="lazy" decoding="async">
+            <figcaption>The Forest on Henry’s second visit · Development render</figcaption>
+          </figure>
+        </div>
+        <div class="feature-item" id="hellish-water-prison">
+          <h3>Hellish Water Prison</h3>
+          <p>When Henry returns to the Water Prison, the lake is red with blood and the water has risen up the sides of the tower. Lightning flashes over the lake and thunder rolls in the distance. Inside, the walls are covered in blood and rust. I wanted to bring new life to that second visit.</p>
+        </div>
+      </section>
+
+      <section class="feature-chapter" id="story" aria-labelledby="story-heading">
+        <h2 id="story-heading">Story</h2>
+        <div class="feature-entries">
+          <div class="feature-item" id="joseph">
+            <h3>Joseph’s opening</h3>
+            <p>Fans have wondered for years if you’re playing as Joseph Schreiber in the original opening. I believe you are. It’s the way he reacts to the walls and the notes, and how confused he sounds in his own apartment. Joseph lived in Room 302 before Henry, and I wanted to show a little more of his life before he was locked in for good.</p>
+            <p>In the new intro, you look around Joseph’s apartment and step into the hallway to get ink for his typewriter. Then you sit down and write notes for whoever comes after you, hoping they’ll understand what’s happening in this apartment and believe what you’ve found out about Silent Hill.</p>
+            <p>That’s my personal take on how those red notes ended up scattered throughout the Apartment World. Joseph is one of the coolest characters in the game, and for someone who left Henry so much to go off of, he doesn’t get nearly enough love.</p>
+            <figure class="shot">
+              <img src="assets/nightmare.webp" alt="Red walls flank a narrow apartment corridor that stretches into the dark." width="1280" height="720" loading="lazy" decoding="async">
+              <figcaption>Joseph’s nightmare corridor · Development render</figcaption>
+            </figure>
+          </div>
+          <div class="feature-item" id="eileen">
+            <h3>Eileen in Room 303</h3>
+            <p>No one likes an escort mission, especially the one in Silent Hill 4: The Room. Trying to get Eileen to listen when I was already struggling to keep Henry alive was one of the most frustrating parts of the game for me. With that in mind, I took the escort section out completely.</p>
+            <p>Eileen now rests in Room 303. Halfway through the game, the peephole in Henry’s apartment opens wide enough for him to crawl through. He can check on Eileen and leave a Holy Candle by her bed to ease her possession. Once you’re on her side of the wall, you find that Walter has locked her doors and windows, too. You’re still trapped in the apartments together.</p>
+            <figure class="shot">
+              <img src="assets/eileen.webp" alt="Eileen lies curled up on her bed in Room 303." width="1200" height="900" loading="lazy" decoding="async">
+              <figcaption>Eileen’s bedroom · Development render</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="feature-entries" id="tomb-inscriptions">
+          <div class="feature-item">
+            <h3>Tomb inscriptions</h3>
+            <p>When Henry climbs into the hole beneath where Walter’s body once hung, he finds himself curled up in the fetal position, surrounded by tombs and figures. The game never really explains who they are. I think they represent Walter’s previous victims. When I counted them, the numbers lined up.</p>
+            <p>I’ve expanded this area so you can stop and read the inscriptions. Each one tells you something about a victim whose story the game barely touched on. I wanted you to learn more about those people, about Walter himself, and how the ritual led everyone to these final moments.</p>
+          </div>
+          <figure class="shot">
+            <img src="assets/tomb-inscriptions.webp" alt="Tomb inscriptions screenshot coming soon." width="900" height="500" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </section>
+
+      <section class="feature-chapter" id="henry" aria-labelledby="henry-heading">
+        <h2 id="henry-heading">Henry</h2>
+        <div class="feature-entries">
+          <div class="feature-item">
+            <h3>Signs of possession</h3>
+            <p>As Henry loses health, you can see the possession taking hold of his body. The more damage he takes, the more possessed he looks. That’s your cue to heal up. It’s also how I picture Walter’s world corrupting him. If Henry dies in Walter’s world, the possession takes him and he dies in the real world, too.</p>
+          </div>
+          <div class="feature-item">
+            <h3>New movement and weapon animations</h3>
+            <p>Henry has new animations for walking and turning, including the way he carries his weapons when he walks or runs. You’ll see them when he strafes, makes a quick turn, or swings his weapon while moving in combat.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-chapter" id="menus-and-hud" aria-labelledby="menus-and-hud-heading">
+        <h2 id="menus-and-hud-heading">Menus and HUD</h2>
+        <div class="feature-lead">
+          <div class="feature-item">
+            <h3>Overhauled main menu</h3>
+            <p>The main menu now has a fully 3D-rendered view that changes with the world you last visited. Keep an eye out for the little details. I carefully crafted each scene the way I pictured it because I wanted even the menus to feel alive.</p>
+          </div>
+          <figure class="shot">
+            <img src="assets/menu-backdrop.webp" alt="A sofa and a record sleeve on a low table in Room 302, with the chained door beyond." width="632" height="352" loading="lazy" decoding="async">
+            <figcaption>Room 302 main-menu backdrop · Development render</figcaption>
+          </figure>
+          <div class="feature-item" id="new-settings">
+            <h3>New settings</h3>
+            <p>I want you, the player, to choose how you experience Silent Hill 4: The Room – Sacrament Edition. That’s why I’ve made so many of the settings customizable.</p>
+            <div class="discord-callout">
+              <p>Is there a setting you’d like to change while you play? Let me know on Discord.</p>
+              <a href="https://discord.gg/ubzuQQMsM7" target="_blank" rel="noopener"><img src="assets/discord.svg" alt="" width="22" height="22">Project Discord<span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="feature-entries">
+          <div class="feature-item" id="letterboxing">
+            <h3>Optional letterboxing</h3>
+            <p>I wanted to add letterboxing to make the game feel more immersive, like watching a movie. The black bars are on by default. You can turn them off if you prefer the full screen.</p>
+            <figure class="feature-quote">
+              <p>Team Silent tried putting the gauges and item icons in the black bars so the play area stayed clear. The producers dropped the bars because moving Henry around felt “cramped.”</p>
+              <figcaption>Imamura and Yamaoka on the original HUD · <a href="https://www.silenthillmemories.net/sh4/post_mortem_en.htm#:~:text=PLACEMENT%20OF%20GAUGES%20AND%20ICONS" target="_blank" rel="noopener">2005 postmortem</a></figcaption>
+            </figure>
+          </div>
+          <div class="feature-item">
+            <h3>Low-health film effects</h3>
+            <p>When Henry takes damage, the screen starts to flicker. The lower his health gets, the stronger the film grain becomes. It’s another way to tell how badly he’s hurt.</p>
+          </div>
+          <div class="feature-item">
+            <h3>HD inventory pictures</h3>
+            <p>Item pictures appear at higher resolution in the inventory.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-chapter" id="restored-content" aria-labelledby="restored-content-heading">
+        <h2 id="restored-content-heading">Restored and Unused Content</h2>
+        <div class="feature-entries">
+          <div class="feature-item">
+            <h3>Restored mechanics</h3>
+            <p>Sacrament Edition builds on work left in the original game. A big one for me was the enemy AI. I restored unused moves and animations, then changed how each enemy uses them to give the fights a better flow and bring out what makes that enemy different.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Unused animations</h3>
+            <p>Animations left in the original game files now play in Sacrament Edition.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Unreleased audio</h3>
+            <p>You can hear sound effects, ambience and music recorded for Silent Hill 4 that went unused in the original release.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-chapter" id="quality-of-life" aria-labelledby="quality-of-life-heading">
+        <h2 id="quality-of-life-heading">Quality of Life</h2>
+        <div class="feature-entries">
+          <div class="feature-item" id="ghost-knockdowns">
+            <h3>Ghosts stay down longer</h3>
+            <p>Ordinary ghosts are easier to knock down and can stay down for up to 90 seconds. That gives you time to search a room before the ghost gets back on Henry’s trail.</p>
+            <figure class="feature-quote">
+              <p>Team Silent felt the ghosts got in the way of exploring. In the original game they got back up in 3–10 seconds. The producers suggested 15–60 seconds depending on difficulty to give players some “respite.”</p>
+              <figcaption>Imamura and Yamaoka on ghost knockdowns · <a href="https://www.silenthillmemories.net/sh4/post_mortem_en.htm#:~:text=GHOSTS%20WERE%20TOO%20OBTRUSIVE" target="_blank" rel="noopener">2005 postmortem</a></figcaption>
+            </figure>
+          </div>
+          <div class="feature-item">
+            <h3>Automatic confirmations</h3>
+            <p>Another frustrating part of the original game was every prompt defaulting to No. Now they all default to Yes, so you can button mash your way through the prompts and still get where you need to go.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Annoying enemies, not so much</h3>
+            <p>I’ve drastically cut down the number of flyers and slugs. Pretty much all of them… I’ve also removed some of the Wall Men, especially during that godforsaken escalator sequence. Horrible.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-chapter" id="upcoming" aria-labelledby="upcoming-heading">
+        <h2 id="upcoming-heading">Upcoming</h2>
+        <ul class="upcoming-list">
+          <li><strong>New weapons</strong> · The Uzi and the rifle.</li>
+          <li><strong>Special weapon abilities</strong> · Each upgraded weapon gets its own ability.</li>
+          <li><a href="#upcoming-mini-bosses">Upcoming mini-boss fights</a></li>
+          <li id="weapon-synergies"><strong>Weapon synergies</strong> · I want to experiment with upgraded weapons that work well together. For example, bug spray might freeze an enemy long enough for an upgraded axe to one-shot it. I want you to be able to pick which weapons you upgrade and use them together to get more out of combat in Silent Hill 4: The Room.
+            <div class="discord-callout">
+              <p>– Got suggestions? <a href="https://discord.gg/ubzuQQMsM7" target="_blank" rel="noopener"><img src="assets/discord.svg" alt="" width="22" height="22">Tell me on Discord<span aria-hidden="true">→</span></a></p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</main>
+  <footer class="footer"><div class="wrap"><p>Silent Hill 4 Sacrament Edition</p><p>An unofficial fan project.</p><div class="footer-links"><a href="about.html">About the project</a><a href="index.html#coffee">Support the project</a></div></div></footer>
+</body>
+</html>

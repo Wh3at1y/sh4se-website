@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#090a0c">
+  <meta name="description" content="The creator’s notes on making Sacrament Edition, building Level Studio, and directing the project.">
+  <title>About the project — Silent Hill 4 Sacrament Edition</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="preload" href="assets/sh4-menu.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="inner-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="mast">
+    <div class="banner"><div class="banner-photo" aria-hidden="true"><img src="assets/door-source.webp" alt="" width="1920" height="1080" fetchpriority="high"></div>
+      <a class="identity" href="index.html" aria-label="Silent Hill 4 Sacrament Edition home"><img class="title-logo" src="assets/title.webp" alt="Silent Hill 4 Sacrament Edition" width="1300" height="269"></a>
+    </div>
+    <nav class="top-nav" aria-label="Main navigation"><div class="wrap menu">
+        <a href="index.html">Home</a>
+        <a href="features.html">New features</a>
+        <a href="about.html" aria-current="page">About<span class="optional">&nbsp;the project</span></a>
+        <a href="download.html">Download</a>
+        <a class="discord-shortcut" href="https://discord.gg/ubzuQQMsM7" aria-label="Project Discord" title="Project Discord" target="_blank" rel="noopener"><img src="assets/discord.svg" alt="" width="22" height="22"></a>
+    </div></nav>
+  </header>
+<main class="content wrap" id="main" tabindex="-1">
+  <header class="page-heading"><h1>About the project</h1></header>
+  <section class="about-opening">
+    <div><h2>Why Silent Hill 4?</h2>
+      <p>Silent Hill 4 was a big part of my childhood, and there’s a lot of nostalgia there for me. It was one of those games I actually stayed home from school to finally beat on my birthday. It holds a special place in my memories, and it’s even become part of my personality. There’s no other game out there like The Room. It gives me this dreadful yet oddly comforting feeling that nothing else can replicate. When I think about this game and the potential it has, or when I talk with friends about the story, the background, and what it could have been, it drives my imagination crazy.</p>
+      <p>This project originally started with me just wanting a darker environment in the Subway with a flashlight, just like in the previous installments. That would never have been possible for me when I first had the idea back in 2017, almost a decade ago. I have pages and pages in my notebook with ideas for levels, changes, and additions, and even a deep dive into the religious and cult side of the story. That’s what keeps my creativity going.</p>
+      <p>I think Silent Hill 4 deserves more appreciation. The clunky mechanics and rough edges held it back, and I don’t blame Team Silent for that. My goal is to give The Room the same polish as the other three games so it feels complete. I’d love for people to remember it for more than being the odd one out of the first four.</p>
+      <p>I also want this to feel welcoming to newcomers. If you’re playing Silent Hill 4 for the first time today, I can see how fighting with Henry’s controls just to land a hit could leave a bad taste in your mouth. That’s a big part of why I feel like this one needs a little more love than the other three. I want it to be easier to pick up, for Henry to respond the way you expect, and for the fights to keep you engaged. My hope is that you’ll want to stick around and dig a little deeper with me into the stories the game never got to tell.</p>
+      <p>If there’s something you’d like to see added, changed, or taken out, I’d love to hear it. That goes for any new mechanic you think would fit The Room, too. You can <a href="https://discord.gg/ubzuQQMsM7" target="_blank" rel="noopener">reach me on the project Discord</a>.</p>
+    </div>
+    <figure><img src="assets/interior.webp" width="1280" height="720" alt="A kitchen chair stands empty in Henry’s apartment."><figcaption>Henry’s apartment · Development render</figcaption></figure>
+  </section>
+  <section class="about-tools"><h2>How I work on the game</h2>
+    <div class="tool-columns">
+      <div><h3>Monitoring tools</h3>
+        <p>I use a plethora of tools to record camera positions, enemy behavior, animations, and a ton of other things going on in the game. We can go back through those logs and see what went wrong, what needs to change, and what’s missing. It’s a tedious process, and it takes a lot of trial and error to get everything ironed out. It’s an old game from the early 2000s, after all.</p>
+      </div>
+      <div><h3>Level Studio</h3>
+        <p>This is our main all-in-one tool for Silent Hill 4: The Room. I go through every room in the 3D editor, where I can grab, place, move, and scale props throughout each level. Then I can walk around as Henry and see if a prop needs to move, if there’s a sound I should add, or if I want to change something else in the environment.</p>
+        <p>A lot of the textures have baked-in shadows, so moving a prop can look wonky in-game. It takes some trial and error to get the room looking the way I want it to.</p>
+      </div>
+      <div><h3>Sequence editor</h3>
+        <p>This custom-built tool lets me create sequences that never played out in the original game. I can use it to add atmosphere or put together a cool cutscene. I haven’t done too much with it yet, but I can see the potential.</p>
+      </div>
+    </div>
+  </section>
+  <section class="ai-note" id="how-i-used-ai"><h2>How I used AI</h2>
+    <p>I’m going to be honest. This wouldn’t be possible without AI tools. I wouldn’t call this AI slop or a one-prompt shop. This took months and months of trial and error, experimenting, logging, playing over and over, testing, and ironing things out. You can’t just send one prompt and call it done.</p>
+    <p>AI was a big help in this. It helped build the car, but I was the one behind the wheel. I know using AI is controversial. For me, it helps to be able to read through what’s actually happening behind the scenes of the game. That’s how we get a better understanding of the mechanics, what was cut, and what actually got used.</p>
+    <p>If you’re interested in how I use AI here, feel free to <a href="https://discord.gg/ubzuQQMsM7" target="_blank" rel="noopener">message me personally on Discord</a>. I’d love to chat about it.</p>
+  </section>
+  <div class="community">
+    <section id="discord" aria-labelledby="discord-heading" tabindex="-1">
+      <h2 id="discord-heading"><img src="assets/discord.svg" alt="" width="26" height="26">Join the Discord</h2>
+      <p>Is there a room you wish you could return to, or a fight you’d change? Join the Discord and tell me about it. A few lines are plenty.</p>
+      <p class="link-status"><a href="https://discord.gg/ubzuQQMsM7" target="_blank" rel="noopener">Join the Discord</a></p>
+    </section>
+    <section id="coffee" aria-labelledby="coffee-heading" tabindex="-1">
+      <h2 id="coffee-heading"><img src="assets/coffee.svg" alt="" width="26" height="26">Buy me a coffee</h2>
+      <p>If you’d like to buy me a coffee for one of those evenings spent testing rooms, thank you.</p>
+      <p class="link-status">Coffee support link coming soon.</p>
+    </section>
+  </div>
+  <details class="credits"><summary>Image credits and further reading</summary><p>The photograph of Henry at the chained door and the keys used in the browser icon come from the <a href="https://www.silenthillmemories.net/sh4/walkthrough_01_room_302_en.htm" target="_blank" rel="noopener">Silent Hill Memories Room 302 archive</a> and its <a href="https://www.silenthillmemories.net/sh4/items_en.htm" target="_blank" rel="noopener">item collection</a>. The project supplied the title logo, menu lettering, gameplay captures, and development renders.</p><p>Akihiro Imamura and Akira Yamaoka discuss the missing mid-level bosses, the ghosts, melee combat and an early HUD layout in <a href="https://www.silenthillmemories.net/sh4/post_mortem_en.htm" target="_blank" rel="noopener">their March 2005 postmortem for Game Developer</a>.</p></details>
+</main>
+  <footer class="footer"><div class="wrap"><p>Silent Hill 4 Sacrament Edition</p><p>An unofficial fan project.</p><div class="footer-links"><a href="about.html">About the project</a><a href="#coffee">Support the project</a></div></div></footer>
+</body>
+</html>
