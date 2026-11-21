@@ -23,7 +23,7 @@
         <a href="about.html">About<span class="optional">&nbsp;the project</span></a>
         <a href="download.html">Download</a>
         <a class="discord-shortcut" href="https://discord.gg/ubzuQQMsM7" aria-label="Join Discord" title="Join Discord" target="_blank" rel="noopener"><img src="assets/discord.svg" alt="" width="22" height="22"></a>
-        <a class="discord-shortcut" href="https://buymeacoffee.com/sh4se" aria-label="Support the Ritual on Buy Me a Coffee" title="Support the Ritual on Buy Me a Coffee" target="_blank" rel="noopener"><img src="assets/coffee.svg" alt="" width="22" height="22"></a>
+        <a class="discord-shortcut" href="https://buymeacoffee.com/sh4se" aria-label="Gift me a Holy Candle" title="Gift me a Holy Candle" target="_blank" rel="noopener"><img src="assets/coffee.svg" alt="" width="22" height="22"></a>
     </div></nav>
   </header>
 <main class="content wrap" id="main" tabindex="-1">
@@ -55,13 +55,19 @@
           <div class="feature-item" id="flashlight">
             <h3>Flashlight addition</h3>
             <p>I always imagined Silent Hill 4 would be one of the scariest games to play with a flashlight. I was sad to see it never got one. That was the starting point for my project. I wanted to add the flashlight and lighting the way I think Team Silent envisioned it.</p>
+            <figure class="shot">
+              <a class="enlarge" href="assets/flashlight-subway.webp" title="Open larger image"><img src="assets/flashlight-subway.webp" alt="Henry lights the passage beneath the South Ashfield sign with his flashlight." decoding="async" width="2282" height="1080"></a>
+            </figure>
           </div>
-          <figure class="shot">
-            <a class="enlarge" href="assets/flashlight-subway.webp" title="Open larger image"><img src="assets/flashlight-subway.webp" alt="Henry lights the passage beneath the South Ashfield sign with his flashlight." decoding="async" width="2282" height="1080"></a>
-          </figure>
-          <div class="feature-item">
-            <h3>Silent Hill 3’s cameras</h3>
-            <p>Sacrament Edition uses the camera mechanics from Silent Hill 3. I studied, tested and recreated them to fit Silent Hill 4’s camera system, or lack thereof. I placed the new camera in every room in the game and matched it to fit each environment.</p>
+          <div class="lead-copy">
+            <div class="feature-item">
+              <h3>Silent Hill 3’s cameras</h3>
+              <p>Sacrament Edition uses the camera mechanics from Silent Hill 3. I studied, tested and recreated them to fit Silent Hill 4’s camera system, or lack thereof. I placed the new camera in every room in the game and matched it to fit each environment.</p>
+            </div>
+            <section id="cutscene-cameras" aria-labelledby="cutscene-cameras-heading" class="feature-item">
+              <h3 id="cutscene-cameras-heading">New cutscene camera angles</h3>
+              <p>I reworked the camera angles in every in-game cutscene. I wanted the shots to catch your eye and pull you further into each scene. Even if you know The Room by heart, you’ll see familiar moments from angles you’ve never seen in the original game.</p>
+            </section>
           </div>
         </div>
         <div class="feature-entries">
@@ -201,9 +207,11 @@
       <section class="feature-chapter" id="worlds" aria-labelledby="worlds-heading">
         <h2 id="worlds-heading">Worlds and Environments</h2>
         <p class="chapter-intro">Silent Hill 4 had a lot of tools and environmental effects that went unused. The Water Prison barely used fog, the water effects were barely there, and the Forest paths never got rain. I wanted to bring those effects to life with Team Silent’s vision in mind. I still think this could have been the best-looking Silent Hill game, maybe even the scariest, if the team had more time to decorate and flesh out these environments.</p>
-        <div class="feature-item" id="subway-second-visit">
-          <h3>Subway on the second visit</h3>
-          <p>In the original game, Henry went back through the same Subway with barely any changes. Now he returns to a hellish version of the Subway, with a different atmosphere and that classic Silent Hill look.</p>
+        <div class="feature-lead" id="subway-second-visit">
+          <div class="feature-item">
+            <h3>Subway on the second visit</h3>
+            <p>In the original game, Henry went back through the same Subway with barely any changes. Now he returns to a hellish version of the Subway, with a different atmosphere and that classic Silent Hill look.</p>
+          </div>
           <figure class="shot">
             <a class="enlarge" href="assets/subway-hell.webp" title="Open larger image"><img src="assets/subway-hell.webp" alt="Henry faces a creature in the red haze of the Subway on his second visit." width="2560" height="1384" loading="lazy" decoding="async"></a>
           </figure>
@@ -218,10 +226,12 @@
             <a class="enlarge" href="assets/forest-fire.webp" title="Open larger image"><img src="assets/forest-fire.webp" alt="Henry follows a trail through the burning Forest." loading="lazy" decoding="async" width="1600" height="865"></a>
           </figure>
         </div>
-        <div class="feature-item" id="hellish-water-prison">
-          <h3>Hellish Water Prison</h3>
-          <p>When Henry returns to the Water Prison, the lake is red with blood and the water has risen up the sides of the tower. Lightning flashes over the lake and thunder rolls in the distance. Inside, the walls are covered in blood and rust. I wanted to bring new life to that second visit.</p>
-            <figure class="shot"><a class="enlarge" href="assets/hell-water-prison.webp" title="Open larger image"><img src="assets/hell-water-prison.webp" alt="Henry stands on the tower walkway above the blood-red lake." loading="lazy" decoding="async" width="1600" height="865"></a></figure>
+        <div class="feature-lead" id="hellish-water-prison">
+          <div class="feature-item">
+            <h3>Hellish Water Prison</h3>
+            <p>When Henry returns to the Water Prison, the lake is red with blood and the water has risen up the sides of the tower. Lightning flashes over the lake and thunder rolls in the distance. Inside, the walls are covered in blood and rust. I wanted to bring new life to that second visit.</p>
+          </div>
+          <figure class="shot"><a class="enlarge" href="assets/hell-water-prison.webp" title="Open larger image"><img src="assets/hell-water-prison.webp" alt="Henry stands on the tower walkway above the blood-red lake." loading="lazy" decoding="async" width="1600" height="865"></a></figure>
         </div>
       </section>
 
@@ -230,20 +240,20 @@
         <div class="feature-entries">
           <div class="feature-item" id="joseph">
             <h3>Joseph’s opening</h3>
-            <p>Fans have wondered for years if you’re playing as Joseph Schreiber in the original opening. I believe you are. It’s the way he reacts to the walls and the notes, and how confused he sounds in his own apartment. Joseph lived in Room 302 before Henry, and I wanted to show a little more of his life before he was locked in for good.</p>
-            <p>In the new intro, you look around Joseph’s apartment and step into the hallway to get ink for his typewriter. Then you sit down and write notes for whoever comes after you, hoping they’ll understand what’s happening in this apartment and believe what you’ve found out about Silent Hill.</p>
-            <p>That’s my personal take on how those red notes ended up scattered throughout the Apartment World. Joseph is one of the coolest characters in the game, and for someone who left Henry so much to go off of, he doesn’t get nearly enough love.</p>
             <figure class="shot">
               <a class="enlarge" href="assets/joseph-apartment-hallway.webp" title="Open larger image"><img src="assets/joseph-apartment-hallway.webp" alt="Dark handprints line the apartment hallway beneath a row of ceiling lights." width="2470" height="1227" loading="lazy" decoding="async"></a>
             </figure>
+            <p>Fans have wondered for years if you’re playing as Joseph Schreiber in the original opening. I believe you are. It’s the way he reacts to the walls and the notes, and how confused he sounds in his own apartment. Joseph lived in Room 302 before Henry, and I wanted to show a little more of his life before he was locked in for good.</p>
+            <p>In the new intro, you look around Joseph’s apartment and step into the hallway to get ink for his typewriter. Then you sit down and write notes for whoever comes after you, hoping they’ll understand what’s happening in this apartment and believe what you’ve found out about Silent Hill.</p>
+            <p>That’s my personal take on how those red notes ended up scattered throughout the Apartment World. Joseph is one of the coolest characters in the game, and for someone who left Henry so much to go off of, he doesn’t get nearly enough love.</p>
           </div>
           <div class="feature-item" id="eileen">
             <h3>Eileen in Room 303</h3>
-            <p>No one likes an escort mission, especially the one in Silent Hill 4: The Room. Trying to get Eileen to listen when I was already struggling to keep Henry alive was one of the most frustrating parts of the game for me. With that in mind, I took the escort section out completely.</p>
-            <p>Eileen now rests in Room 303. Halfway through the game, the peephole in Henry’s apartment opens wide enough for him to crawl through. He can check on Eileen and leave a Holy Candle by her bed to ease her possession. Once you’re on her side of the wall, you find that Walter has locked her doors and windows, too. You’re still trapped in the apartments together.</p>
             <figure class="shot">
               <a class="enlarge" href="assets/eileen-bedroom.webp" title="Open larger image"><img src="assets/eileen-bedroom.webp" alt="Eileen rests on her bed beside Robbie the Rabbit." loading="lazy" decoding="async" width="1600" height="865"></a>
             </figure>
+            <p>No one likes an escort mission, especially the one in Silent Hill 4: The Room. Trying to get Eileen to listen when I was already struggling to keep Henry alive was one of the most frustrating parts of the game for me. With that in mind, I took the escort section out completely.</p>
+            <p>Eileen now rests in Room 303. Halfway through the game, the peephole in Henry’s apartment opens wide enough for him to crawl through. He can check on Eileen and leave a Holy Candle by her bed to ease her possession. Once you’re on her side of the wall, you find that Walter has locked her doors and windows, too. You’re still trapped in the apartments together.</p>
           </div>
         </div>
         <div class="feature-entries" id="tomb-inscriptions">
@@ -302,13 +312,15 @@
               <figcaption>Imamura and Yamaoka on the original HUD · <a href="https://www.silenthillmemories.net/sh4/post_mortem_en.htm#:~:text=PLACEMENT%20OF%20GAUGES%20AND%20ICONS" target="_blank" rel="noopener">2005 postmortem</a></figcaption>
             </figure>
           </div>
-          <div class="feature-item">
-            <h3>Low-health film effects</h3>
-            <p>When Henry takes damage, the screen starts to flicker. The lower his health gets, the stronger the film grain becomes. It’s another way to tell how badly he’s hurt.</p>
-          </div>
-          <div class="feature-item">
-            <h3>HD inventory pictures</h3>
-            <p>Item pictures appear at higher resolution in the inventory.</p>
+          <div class="lead-copy">
+            <div class="feature-item">
+              <h3>Low-health film effects</h3>
+              <p>When Henry takes damage, the screen starts to flicker. The lower his health gets, the stronger the film grain becomes. It’s another way to tell how badly he’s hurt.</p>
+            </div>
+            <div class="feature-item">
+              <h3>HD inventory pictures</h3>
+              <p>Item pictures appear at higher resolution in the inventory.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -320,13 +332,15 @@
             <h3>Restored mechanics</h3>
             <p>Sacrament Edition builds on work left in the original game. A big one for me was the enemy AI. I restored unused moves and animations, then changed how each enemy uses them to give the fights a better flow and bring out what makes that enemy different.</p>
           </div>
-          <div class="feature-item">
-            <h3>Unused animations</h3>
-            <p>Animations left in the original game files now play in Sacrament Edition.</p>
-          </div>
-          <div class="feature-item">
-            <h3>Unreleased audio</h3>
-            <p>You can hear sound effects, ambience and music recorded for Silent Hill 4 that went unused in the original release.</p>
+          <div class="lead-copy">
+            <div class="feature-item">
+              <h3>Unused animations</h3>
+              <p>Animations left in the original game files now play in Sacrament Edition.</p>
+            </div>
+            <div class="feature-item">
+              <h3>Unreleased audio</h3>
+              <p>You can hear sound effects, ambience and music recorded for Silent Hill 4 that went unused in the original release.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -342,13 +356,15 @@
               <figcaption>Imamura and Yamaoka on ghost knockdowns · <a href="https://www.silenthillmemories.net/sh4/post_mortem_en.htm#:~:text=GHOSTS%20WERE%20TOO%20OBTRUSIVE" target="_blank" rel="noopener">2005 postmortem</a></figcaption>
             </figure>
           </div>
-          <div class="feature-item">
-            <h3>Automatic confirmations</h3>
-            <p>Another frustrating part of the original game was every prompt defaulting to No. Now they all default to Yes, so you can button mash your way through the prompts and still get where you need to go.</p>
-          </div>
-          <div class="feature-item">
-            <h3>Annoying enemies, not so much</h3>
-            <p>I’ve drastically cut down the number of flyers and slugs. Pretty much all of them… I’ve also removed some of the Wall Men, especially during that godforsaken escalator sequence. Horrible.</p>
+          <div class="lead-copy">
+            <div class="feature-item">
+              <h3>Automatic confirmations</h3>
+              <p>Another frustrating part of the original game was every prompt defaulting to No. Now they all default to Yes, so you can button mash your way through the prompts and still get where you need to go.</p>
+            </div>
+            <div class="feature-item">
+              <h3>Annoying enemies, not so much</h3>
+              <p>I’ve drastically cut down the number of flyers and slugs. Pretty much all of them… I’ve also removed some of the Wall Men, especially during that godforsaken escalator sequence. Horrible.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -370,7 +386,7 @@
     </div>
   </div>
 </main>
-  <footer class="footer"><div class="wrap"><p>Silent Hill 4 Sacrament Edition</p><p>An unofficial dedicated fan project.</p><div class="footer-links"><a href="about.html">About the project</a><a href="index.html#coffee">Support the Ritual</a></div></div></footer>
+  <footer class="footer"><div class="wrap"><p>Silent Hill 4 Sacrament Edition</p><p>An unofficial dedicated fan project.</p><div class="footer-links"><a href="about.html">About the project</a><a href="https://buymeacoffee.com/sh4se" target="_blank" rel="noopener">Gift me a Holy Candle</a></div></div></footer>
 <dialog class="photo-viewer" aria-label="Enlarged screenshot">
     <form method="dialog"><button autofocus aria-label="Close image preview">Close &times;</button></form>
     <img alt="">

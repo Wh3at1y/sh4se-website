@@ -53,8 +53,6 @@ img { display: block; max-width: 100%; }
 .banner::after { content: ""; background: linear-gradient(0deg,#08090b 0%,rgba(8,9,11,.23) 21%,transparent 63%,rgba(8,9,11,.29)), linear-gradient(90deg,rgba(7,8,10,.73),rgba(8,9,11,.24) 34%,rgba(7,8,10,.05) 74%,rgba(8,9,11,.48)); }
 .identity { display: block; width: min(46%,610px); margin-right: 19%; line-height: 0; }
 .title-logo { width: 100%; height: auto; opacity: .94; filter: drop-shadow(0 2px 7px #000); }
-.inner-page .banner { height: clamp(165px,16vw,230px); }
-.inner-page .identity { width: min(32%,390px); }
 .top-nav { background: #0a0b0c; border-block: 1px solid #303236; }
 .menu { min-height: 54px; display: flex; justify-content: center; align-items: stretch; column-gap: clamp(10px,3vw,55px); }
 .menu a { position: relative; display: flex; align-items: center; justify-content: center; text-align: center; padding: 6px 12px; color: #b0b2b7; font-size: 19px; line-height: 1.25; text-decoration: none; white-space: nowrap; }
@@ -90,8 +88,8 @@ figcaption { color: var(--muted); font-size: 14px; line-height: 1.4; padding-top
 .chapter-nav a:hover { color: white; }
 .feature-chapter + .feature-chapter { margin-top: 33px; padding-top: 30px; border-top: 1px solid var(--line); }
 .feature-chapter h2 { margin-bottom: 20px; }
-.chapter-intro, #subway-second-visit { max-width: 66ch; margin-bottom: 22px; }
-#hellish-water-prison { max-width: 66ch; }
+.chapter-intro { max-width: 66ch; margin-bottom: 22px; }
+#worlds .feature-lead:last-child { margin-bottom: 0; }
 .feature-entries + .feature-entries { margin-top: 22px; }
 .feature-lead, .feature-entries { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px clamp(24px,2.7vw,40px); align-items: start; }
 .feature-lead { margin-bottom: 22px; }
@@ -116,9 +114,11 @@ h3 + .feature-quote { margin-top: 0; margin-bottom: 10px; }
 .feature-item .feature-source { margin-top: 9px; color: var(--muted); font-size: 16px; }
 .feature-item .shot { margin-top: 14px; }
 .shot img { aspect-ratio: 1.8; }
+#story h3 + .shot { margin: 10px 0 14px; }
+.feature-chapter .shot + .feature-quote, .feature-chapter .shot + details { margin-top: 14px; }
 #classic .shot img { aspect-ratio: auto; }
 @media (min-width: 961px) {
-  :is(#classic, #menus-and-hud) .feature-lead .shot { grid-column: 2; grid-row: 1 / span 2; }
+  #menus-and-hud .feature-lead > .shot { grid-column: 2; grid-row: 1 / span 2; }
 }
 #final-boss .shot img { object-position: 59% center; }
 #eileen .shot img { object-position: 70% center; }
@@ -155,19 +155,17 @@ details p { max-width: 75ch; margin-top: 0; margin-bottom: 15px; }
 @media (max-width: 960px) {
   .archive-layout { grid-template-columns: 155px minmax(0,1fr); gap: 30px; }
   .feature-lead, .feature-entries { grid-template-columns: 1fr; gap: 18px; }
-  .feature-lead .shot, .feature-item .shot { max-width: 570px; }
+  .feature-chapter .shot { width: 100%; }
   .overview, .about-opening, .release { gap: 32px; }
 }
 @media (max-width: 700px) {
   body { font-size: 17px; }
   .wrap { width: calc(100% - 38px); }
   .banner { height: clamp(215px,46vw,310px); }
-  .inner-page .banner { height: 145px; }
   .banner-photo { inset-inline: 2% -5%; mask-image: linear-gradient(90deg,transparent,black 23%); }
   .banner-photo img { object-position: 52% 36%; }
   .banner::after { background: linear-gradient(0deg,#08090b 1%,rgba(8,9,11,.69) 26%,transparent 77%),linear-gradient(90deg,rgba(8,9,11,.5),transparent 84%); }
-  .identity, .inner-page .identity { width: min(75%,395px); margin: 0; align-self: end; margin-bottom: 28px; }
-  .inner-page .identity { width: min(57%,300px); margin-bottom: 20px; }
+  .identity { width: min(75%,395px); margin: 0; align-self: end; margin-bottom: 28px; }
   .menu { width: calc(100% - 22px); min-height: 48px; column-gap: 2px; justify-content: space-evenly; }
   .menu a { font-size: 15.5px; padding-inline: 5px; }
   .menu a[aria-current]::after { left: 4px; right: 4px; }
@@ -206,7 +204,7 @@ details p { max-width: 75ch; margin-top: 0; margin-bottom: 15px; }
 
 .enlarge { display: block; cursor: zoom-in; }
 .enlarge:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
-.arena-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.arena-gallery { margin-top: 14px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 .arena-gallery .shot { margin: 0; }
 .arena-gallery .shot:first-child { grid-column: 1 / -1; }
 
@@ -220,4 +218,101 @@ html:has(.photo-viewer[open]) { overflow: hidden; }
 @media (min-width: 961px) {
   #combat #weapon-upgrades { grid-column: 1; grid-row: 2; }
   #combat #shotgun { grid-column: 2; grid-row: 1; }
+}
+
+/* Echo the candlelit hallway in the margins while keeping the text on solid ground. */
+:root { --ritual: #ba7264; }
+.content h1, .content h2, .thumbnails span { text-wrap: balance; }
+.page-links a, .community p a, .feature-source a, summary { font-weight: 600; }
+.page-links a, .community p a, .feature-source a {
+  text-decoration-color: var(--ritual);
+  text-decoration-thickness: .09em;
+}
+.page-heading h1::after,
+.content :is(.overview, .home-index, .feature-chapter, .about-opening, .about-tools, .ai-note, .release, .faq) h2::after {
+  content: "";
+  display: block;
+  width: clamp(4rem, 12%, 7rem);
+  height: 6px;
+  margin-top: .24em;
+  background: linear-gradient(100deg, var(--ritual), #ac8778 63%, #69514c);
+  clip-path: polygon(0 46%, 32% 20%, 28% 31%, 88% 0, 67% 29%, 100% 15%, 51% 52%, 12% 73%, 43% 65%, 23% 91%, 0 100%, 15% 62%);
+}
+.menu a[aria-current]::after { background: var(--ritual); }
+.feature-quote { border-left-color: var(--ritual); }
+.enlarge:hover img, .enlarge:focus-visible img { border-color: var(--ritual); }
+
+@media (min-width: 1250px) {
+  .wrap { width: min(84%, 88rem); }
+  body {
+    background-image:
+      linear-gradient(90deg, rgba(12,12,14,.74), var(--ground) max(8%, calc(50% - 45rem)),
+        var(--ground) min(92%, calc(50% + 45rem)), rgba(12,12,14,.74)),
+      url("assets/joseph-apartment-hallway.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .overview-copy, .about-opening p, .feature-item p { max-width: 68ch; }
+}
+@media (min-width: 701px) and (max-width: 850px) {
+  .menu { column-gap: 6px; }
+  .menu a { padding-inline: 8px; }
+  .tool-columns { grid-template-columns: 1fr; }
+  .tool-columns p { max-width: 65ch; }
+}
+@media (max-width: 470px) {
+  .menu {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0,1.45fr) 44px;
+    width: calc(100% - 32px);
+    max-width: 24rem;
+    column-gap: 8px;
+  }
+  .menu a { min-height: 44px; font-size: 16px; }
+  .menu .discord-shortcut { grid-column: 3; }
+
+  .menu .discord-shortcut:nth-last-child(2) { grid-row: 1; }
+  .menu .discord-shortcut:last-child { grid-row: 2; }
+}
+
+/* Keep the menu lettering and reading type in proportion on large displays. */
+@media (min-width: 1440px) {
+  :root { --reading-size: clamp(18px, calc(12px + .42vw), 24px); }
+  body { font-size: var(--reading-size); }
+  .feature-item p, .tool-columns p, .discord-callout p, summary,
+  .upcoming-fights > p { font-size: calc(var(--reading-size) - 1px); }
+  .page-links a, .chapter-nav a, .feature-item .feature-source { font-size: calc(var(--reading-size) - 2px); }
+  h2 { font-size: clamp(30px, 1.9vw, 40px); }
+  h1 { font-size: clamp(45px, 2.8vw, 60px); }
+  .feature-item h3, .feature-item h4, .menu a { font-size: clamp(19px, 1.18vw, 25px); }
+}
+
+@keyframes hallway-emerges {
+  from { opacity: .64; transform: scale(1.025); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes title-in-the-light {
+  0% { opacity: .58; transform: translateY(4px); }
+  58% { opacity: 1; filter: drop-shadow(0 0 6px #efdec388); }
+  100% { opacity: .94; transform: translateY(0); filter: drop-shadow(0 2px 7px #000); }
+}
+@keyframes print-emerges {
+  from { opacity: .76; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .banner-photo img { animation: hallway-emerges 1.4s ease-out; }
+  .title-logo { animation: title-in-the-light 1.6s ease-out; }
+  @supports (animation-timeline: view()) {
+    .shot, .room-shot, .thumbnails a {
+      animation: print-emerges linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 65%;
+    }
+  }
+  @media (hover: hover) {
+    .enlarge img { transition: border-color .25s, box-shadow .25s; }
+    .enlarge:hover img { box-shadow: 0 0 16px #ba72642b; }
+  }
 }
